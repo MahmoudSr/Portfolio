@@ -1,0 +1,75 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  padding-right: 4rem;
+  position: relative;
+}
+
+.logo {
+  width: 10em;
+}
+
+// Hamburger styles
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 0.3em;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1001;
+
+  span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: var(--periwinkle);
+    transition: 0.3s;
+  }
+}
+
+// Nav list
+.nav__list {
+  list-style: none;
+  display: flex;
+  gap: 2em;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+
+  .nav__link {
+    text-decoration: none;
+    color: var(--periwinkle);
+  }
+}
+
+// Mobile Styles
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav__list {
+    position: absolute;
+    top: 200px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    gap: 1.5em;
+    padding: 1.5em 0;
+    display: none;
+    z-index: 1000;
+
+    // ✅ Transparent and blurred background
+    background-color: rgba(10, 25, 47, 0.6); // semi-transparent navy
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); // for Safari
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .nav__list.active {
+    display: flex;
+  }
+}

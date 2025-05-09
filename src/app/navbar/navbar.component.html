@@ -1,0 +1,23 @@
+<nav class="nav bg-color">
+  <img src="personal-logo.png" class="logo" alt="Mahmoud Srouji" />
+
+  <button class="hamburger" (click)="toggleMenu()" aria-label="Toggle menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <ul [class.active]="menuOpen" class="nav__list">
+    <li class="nav__item">
+      <a class="nav__link" (click)="toggleMenu()" routerLink="/">Home</a>
+    </li>
+    <li class="nav__item">
+      <a class="nav__link" (click)="toggleMenu()" routerLink="/about">About</a>
+    </li>
+    <li class="nav__item">
+      <a class="nav__link" (click)="toggleMenu()" routerLink="/projects"
+        >Projects</a
+      >
+    </li>
+  </ul>
+</nav>
