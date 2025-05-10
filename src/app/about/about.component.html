@@ -1,6 +1,6 @@
 <section>
   <div class="about__content">
-    <img id="float" src="bug.png" alt="" />
+    <img id="float" src="/images/bug.png" alt="" />
     <p style="font-size: 1.5em">{{ tag }}</p>
     <h2>About Me</h2>
     <p>
@@ -27,5 +27,21 @@
       tweaking my own projects, or learing something new. I enjoy solving
       problems and understanding how users interact with technology.
     </p>
+  </div>
+
+  <div class="code-drop-container">
+    <span
+      *ngFor="let s of codeSnippets"
+      class="code-snippet"
+      [ngStyle]="{
+        color: s.color,
+        left: s.left,
+        top: s.top,
+        animationDelay: s.delay,
+        '--rotation': s.rotation
+      }"
+    >
+      {{ s.text }}
+    </span>
   </div>
 </section>

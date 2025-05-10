@@ -47,7 +47,7 @@ section {
   gap: 1em;
   position: relative;
 
-  background-image: url("/bg-image.png");
+  background-image: url("/images/bg-image.png");
   background-size: 200%;
   animation: moveBg 30s linear infinite;
   background-repeat: no-repeat;
@@ -89,4 +89,34 @@ ul {
 .personal-touch {
   font-family: var(--accent-font);
   font-size: 1.2rem;
+}
+
+.code-drop-container {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.code-snippet {
+  position: absolute;
+  font-family: var(--accent-font);
+  font-size: 1em;
+  opacity: 0;
+  --rotation: 0deg;
+
+  animation: fall-down 1.2s ease-out forwards;
+  transform: rotate(var(--rotation));
+  white-space: nowrap;
+}
+
+@keyframes fall-down {
+  0% {
+    transform: translateY(0) rotate(var(--rotation));
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(200px) rotate(var(--rotation));
+    opacity: 1;
+  }
 }

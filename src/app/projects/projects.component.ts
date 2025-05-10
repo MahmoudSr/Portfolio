@@ -17,7 +17,7 @@ export class ProjectsComponent {
       tech: ['Angular', 'TypeScript', 'SCSS'],
       github: 'https://github.com/MahmoudSr/mahmoudsr.github.io',
       demo: 'https://mahmoudsr.github.io/',
-      image: 'space-tourism.png',
+      image: '/images/space-tourism.png',
     },
     {
       id: 2,
@@ -26,7 +26,7 @@ export class ProjectsComponent {
       tech: ['HTML', 'CSS'],
       github: 'https://github.com/MahmoudSr/FEM-Clipboard',
       demo: 'https://mahmoudsr.github.io/FEM-Clipboard/',
-      image: 'clipboard.png',
+      image: '/images/clipboard.png',
     },
     {
       id: 3,
@@ -36,7 +36,7 @@ export class ProjectsComponent {
       tech: ['HTML', 'JavaScript', 'CSS'],
       github: 'https://github.com/MahmoudSr/loop-studio-challange',
       demo: 'https://mahmoudsr.github.io/loop-studio-challange/',
-      image: 'loop-studio.png',
+      image: '/images/loop-studio.png',
     },
     {
       id: 4,
@@ -46,7 +46,7 @@ export class ProjectsComponent {
       tech: ['HTML', 'JavaScript', 'CSS'],
       github: 'https://github.com/MahmoudSr/E-tech',
       demo: 'https://mahmoudsr.github.io/E-tech/',
-      image: 'e-tech.png',
+      image: '/images/e-tech.png',
     },
     {
       id: 5,
@@ -56,7 +56,7 @@ export class ProjectsComponent {
       tech: ['HTML', 'JavaScript', 'CSS'],
       github: 'https://github.com/MahmoudSr/FEM-Insure',
       demo: 'https://mahmoudsr.github.io/FEM-Insure/',
-      image: 'fem.png',
+      image: '/images/fem.png',
     },
     {
       id: 6,
@@ -66,7 +66,7 @@ export class ProjectsComponent {
       tech: ['HTML', 'JavaScript', 'CSS'],
       github: 'https://github.com/MahmoudSr/FEM-news',
       demo: 'https://mahmoudsr.github.io/FEM-news/',
-      image: 'grid-show.png',
+      image: '/images/grid-show.png',
     },
     // Add more...
   ];
