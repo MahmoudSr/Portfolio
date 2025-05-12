@@ -9,7 +9,7 @@
     <p>
       I'm Mahmoud Srouji, a frontend engineer who builds sleek, responsive, and
       perfomance-driven websites using Angular, TYpescript, and modern web
-      tools. Im in love with the idea of turing templates alive
+      tools. Im in love with the idea of turing templates alive.
     </p>
     <p>
       My focus is on crafting interactive and accessible user experiences that
@@ -33,8 +33,8 @@
   </div>
 
   <div class="code-drop-container">
+    @for(s of codeSnippets; track s) {
     <span
-      *ngFor="let s of codeSnippets"
       class="code-snippet"
       [ngStyle]="{
         color: s.color,
@@ -46,5 +46,6 @@
     >
       {{ s.text }}
     </span>
+    }
   </div>
 </section>

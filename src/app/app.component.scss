@@ -15,8 +15,7 @@
   position: absolute;
   bottom: -2em;
   color: #00ff88;
-  font-family: "Fira Code", monospace;
-  //   opacity: 0.07;
+  font-family: var(--accent-font);
   animation: matrixFloat 8s linear infinite;
   white-space: nowrap;
   user-select: none;
@@ -25,14 +24,16 @@
 
 @keyframes matrixFloat {
   0% {
-    transform: translateY(0);
+    transform: translateY(-120vh);
     opacity: 0.2;
   }
+
   40% {
     opacity: 0.4;
   }
+
   100% {
-    transform: translateY(-120vh);
-    opacity: 0;
+    transform: translateY(0);
+    opacity: 0.1;
   }
 }

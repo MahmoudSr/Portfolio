@@ -11,18 +11,39 @@
 
   <ul [class.active]="menuOpen" class="nav__list">
     <li class="nav__item">
-      <a class="nav__link" (click)="toggleMenu()" routerLink="/">Home</a>
+      <a
+        class="nav__link"
+        (click)="toggleMenu()"
+        routerLink="/"
+        [routerLinkActive]="'active-link'"
+        [routerLinkActiveOptions]="{ exact: true }"
+        >Home</a
+      >
     </li>
     <li class="nav__item">
-      <a class="nav__link" (click)="toggleMenu()" routerLink="/about">About</a>
+      <a
+        class="nav__link"
+        (click)="toggleMenu()"
+        [routerLink]="'/about'"
+        [routerLinkActive]="'active-link'"
+        >About</a
+      >
     </li>
     <li class="nav__item">
-      <a class="nav__link" (click)="toggleMenu()" routerLink="/profession"
+      <a
+        class="nav__link"
+        (click)="toggleMenu()"
+        [routerLink]="'/profession'"
+        [routerLinkActive]="'active-link'"
         >Profession</a
       >
     </li>
     <li class="nav__item">
-      <a class="nav__link" (click)="toggleMenu()" routerLink="/projects"
+      <a
+        class="nav__link"
+        (click)="toggleMenu()"
+        [routerLink]="'/projects'"
+        [routerLinkActive]="'active-link'"
         >Projects</a
       >
     </li>
