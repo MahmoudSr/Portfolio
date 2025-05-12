@@ -1,0 +1,124 @@
+.career-timeline {
+  position: relative;
+  padding: 4rem 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.timeline-line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  background-color: var(--periwinkle); // adjust to your palette
+  transform: translateX(-50%);
+  z-index: 0;
+}
+
+.timeline-item {
+  cursor: pointer;
+  position: relative;
+  width: 45%; // tighter width, pulls cards closer
+  padding: 1rem 0.5rem;
+  box-sizing: border-box;
+  z-index: 1;
+  padding: 1rem 2rem;
+  min-height: 100%;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.6s ease-out;
+}
+
+.timeline-item.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.timeline-item:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
+}
+
+.timeline-item.left {
+  left: 0;
+  text-align: right;
+}
+
+.timeline-item.right {
+  left: 55%;
+  text-align: left;
+}
+
+.timeline-icon {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  background-color: var(--aquamarine);
+  color: #0a192f;
+  padding: 0.8em;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  z-index: 2;
+  box-shadow: 0 0 0 4px #0a192f;
+
+  transition: transform 0.4s ease;
+}
+
+.timeline-item.in-view .timeline-icon {
+  animation: pulse 0.6s ease;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.timeline-content {
+  background-color: var(--rich-black);
+  color: white;
+  border: 1px solid var(--periwinkle);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-top: 2.5rem;
+  max-width: 30em;
+  margin-inline: auto;
+}
+
+// fine-tuning for subtle spacing control
+.timeline-item.left .timeline-content {
+  margin-right: 0.5rem;
+}
+
+.timeline-item.right .timeline-content {
+  margin-left: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .timeline-item {
+    width: 100%;
+    left: 0 !important;
+    text-align: center;
+    padding-top: 5rem;
+  }
+
+  .timeline-item.right,
+  .timeline-item.left {
+    left: 0;
+  }
+
+  .timeline-content {
+    margin: 0 auto;
+  }
+
+  .timeline-icon {
+    left: 50%;
+  }
+}

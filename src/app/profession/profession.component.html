@@ -1,0 +1,15 @@
+<section class="career-timeline">
+  <div class="timeline-line"></div>
+  <div
+    *ngFor="let event of careerEvents"
+    class="timeline-item"
+    [ngClass]="event.side"
+  >
+    <div class="timeline-content">
+      <div class="timeline-icon">{{ event.icon }}</div>
+      <h3>{{ event.title }}</h3>
+      <p>{{ event.description }}</p>
+      <p>{{ event.year }}</p>
+    </div>
+  </div>
+</section>
