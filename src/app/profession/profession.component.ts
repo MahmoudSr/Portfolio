@@ -42,6 +42,22 @@ export class ProfessionComponent implements AfterViewInit {
   careerEvents = [
     {
       side: 'left',
+      icon: '🖥️',
+      title: 'FreeLance',
+      description:
+        'Worked on various projects, including responsive websites and a personal portfolio site.',
+      year: 'Dec 2024 - Jan 2025',
+    },
+    {
+      side: 'right',
+      icon: '💼',
+      title: 'Internship',
+      description:
+        'Built features for internal tools and client apps during an Angular-based frontend internship.',
+      year: 'Dec 2024 - Jan 2025',
+    },
+    {
+      side: 'left',
       icon: '🎓',
       title: 'Graduated',
       description:
@@ -55,22 +71,6 @@ export class ProfessionComponent implements AfterViewInit {
       description:
         'Independently designed and launched a responsive company website using Angular.',
       year: 'Aug 2023 - Oct 2023',
-    },
-    {
-      side: 'left',
-      icon: '💼',
-      title: 'Internship',
-      description:
-        'Built features for internal tools and client apps during an Angular-based frontend internship.',
-      year: 'Dec 2024 - Jan 2025',
-    },
-    {
-      side: 'right',
-      icon: '💼',
-      title: 'Internship',
-      description:
-        'Built features for internal tools and client apps during an Angular-based frontend internship.',
-      year: 'Dec 2024 - Jan 2025',
     },
   ];
 }

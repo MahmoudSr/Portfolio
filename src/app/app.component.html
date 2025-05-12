@@ -1,2 +1,15 @@
+<div class="floating-code-background">
+  @for(word of codeWords; track word) {
+  <span
+    class="matrix-char"
+    [style.left.%]="word.left"
+    [style.animationDelay.s]="word.delay"
+    [style.fontSize.em]="word.size"
+  >
+    {{ word.text }}
+  </span>
+  }
+</div>
 <app-navbar></app-navbar>
+
 <router-outlet></router-outlet>

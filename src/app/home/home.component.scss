@@ -9,14 +9,15 @@ h1 {
 }
 
 .hero {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 4em;
   gap: 2em;
   background-color: var(--oxford-blue);
-  position: relative;
   border-radius: 1em;
+  margin-inline: auto;
 }
 
 .box {
