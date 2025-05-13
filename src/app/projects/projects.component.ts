@@ -68,6 +68,16 @@ export class ProjectsComponent {
       demo: 'https://mahmoudsr.github.io/FEM-news/',
       image: 'images/grid-show.png',
     },
+    {
+      id: 7,
+      title: 'Job Listing',
+      description:
+        'A challenge to create a responsive website using HTML, SCSS, and Typesccript. Mainly focuses on Data and filtering.',
+      tech: ['Angular', 'TypeScript', 'SCSS'],
+      github: 'https://github.com/MahmoudSr/joblisting',
+      demo: 'https://mahmoudsr.github.io/joblisting/',
+      image: 'images/job-listing.png',
+    },
     // Add more...
   ];
 }
