@@ -3,7 +3,12 @@
     ><img src="images/personal-logo.png" class="logo" alt="Mahmoud Srouji"
   /></a>
 
-  <button class="hamburger" (click)="toggleMenu()" aria-label="Toggle menu">
+  <button
+    class="hamburger"
+    [class.is-active]="menuOpen"
+    (click)="toggleMenu()"
+    aria-label="Toggle menu"
+  >
     <span></span>
     <span></span>
     <span></span>

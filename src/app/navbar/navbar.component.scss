@@ -26,10 +26,22 @@
     width: 25px;
     height: 3px;
     background-color: var(--periwinkle);
-    transition: 0.3s;
+    transition: 0.3s ease;
+    border-radius: 1rem;
   }
 }
 
+.hamburger.is-active span:nth-child(1) {
+  transform: translateY(6px) rotate(45deg);
+}
+
+.hamburger.is-active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.is-active span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
 // Nav list
 .nav__list {
   list-style: none;
