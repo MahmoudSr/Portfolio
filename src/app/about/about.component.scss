@@ -1,5 +1,6 @@
 section {
   padding: 1em;
+  color: white;
 }
 
 #float {
@@ -73,6 +74,12 @@ section {
   100% {
     background-position: 0% 0%;
   }
+}
+
+.about__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .skills {
